@@ -63,7 +63,7 @@ _**Quad-Pack** Quad Pack is a app that allows you to orgainize your things when 
 | :--------------: | :----------------------------------------- |
 |      React       | _Install react App_ |
 |   React Router   | _Install React Router_ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Express      | _E_ |
 |  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
 | bundle           |
 <br>
