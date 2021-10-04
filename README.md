@@ -74,7 +74,7 @@ _**Quad-Pack** Quad Pack is a app that allows you to orgainize your things when 
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](https://www.figma.com/file/OagA1s6kr3Q0Yk0mFvdFzZ/Quad-Pack?node-id=0%3A1)
+!(https://www.figma.com/file/OagA1s6kr3Q0Yk0mFvdFzZ/Quad-Pack?node-id=0%3A1)
 
 - Desktop Landing
 
