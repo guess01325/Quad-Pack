@@ -102,12 +102,12 @@ _**Quad-Pack** Quad Pack is a app that allows you to orgainize your things when 
 
 > Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between your components. In other words, show which components are rendering the other components. Include a link to your component tree
 
-[Component Tree Sample](https://whimsical.com/quad-component-tree-FrnJiifivvnLR2E9CExEWc)
+(https://whimsical.com/quad-component-tree-FrnJiifivvnLR2E9CExEWc)
 
 #### Component Architecture
 
 > Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
+(https://whimsical.com/component-architecture-SSi6DfJqGf1oqCiTSb8VZM)
 ``` structure
 
 
