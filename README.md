@@ -50,11 +50,11 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _a free open-source front-end JavaScript library for builidnbg user interfaces or UI components_ |
-|   React Router   | _Router enbables the navigation amongst screen components in React, allows chaning the browser URL, and keeps the UI in sync with the URL. |
+|      React       | a free open-source front-end JavaScript library for builidnbg user interfaces or UI components |
+|   React Router   | Router enbables the navigation amongst screen components in React, allows chaning the browser URL, and keeps the UI in sync with the URL. |
 |     Ruby on Rails      | A open source framework for Web development in Ruby, and object-oriented programming language similar to python  |
-|  jwt  | _for token base authentication_ |
-| bcrypt           | -used for Password encryption...|
+|  JWT  | for token base authentication_ |
+| bcrypt           | used for Password encryption.|
 <br>
 
 ### Client (Front End)
