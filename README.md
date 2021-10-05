@@ -34,24 +34,12 @@ _**Quad-Pack** Quad Pack is a app that allows you to orgainize your things when 
 <br>
 
 ### Goals
--Create rails app
-- install gem dependancys
-- _create tables in postres,_
-- _create schema._
-- _migrate data
-- _seed data._
-- _create routes_
-- Create Crud Request
-- _Create React App
-- _create components_
-- _set routes_
-- setState
-- setup axios request
-- Make all request for crud
-- set props
-- set params
-- Do styling
-- return forms, what is display on page exc. 
+
+- They can sign up using thier name, email, password, Organization (Team). 
+- When they sign in they will see thier events posted. 
+- They will be able to click on the event and add what items they want, or edit already existing items
+- They can also add a event if they like to the list 
+- I will also create a about me page so they can relay any comments about the apps or comments for upgrades. 
 
 <br>
 
@@ -61,11 +49,11 @@ _**Quad-Pack** Quad Pack is a app that allows you to orgainize your things when 
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Install react App_ |
-|   React Router   | _Install React Router_ |
-|     Express      | _E_ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
-| bundle           |
+|      React       | _a free open-source front-end JavaScript library for builidnbg user interfaces or UI components_ |
+|   React Router   | _Router enbables the navigation amongst screen components in React, allows chaning the browser URL, and keeps the UI in sync with the URL. |
+|     Ruby on Rails      | A open source framework for Web development in Ruby, and object-oriented programming language similar to python  |
+|  jwt  | _for token base authentication_ |
+| bcrypt           | -used for Password encryption...|
 <br>
 
 ### Client (Front End)
@@ -73,26 +61,10 @@ _**Quad-Pack** Quad Pack is a app that allows you to orgainize your things when 
 #### Wireframes
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+https://res.cloudinary.com/otisg/image/upload/v1633397462/QuadPack_pvn7xu.png
 
-!(https://www.figma.com/file/OagA1s6kr3Q0Yk0mFvdFzZ/Quad-Pack?node-id=0%3A1)
 
 - Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
 
 ![Dummy Link](url)
 
