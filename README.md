@@ -97,11 +97,11 @@ _**Quad-Pack** Quad Pack is a app that allows you to orgainize your things when 
 
 ### Server (Back End)
 
+
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+![alt text](https://res.cloudinary.com/otisg/image/upload/v1633401994/ERD-Final_zfndzn.png)   
 
-(https://app.diagrams.net/#G14rEQdJdB0MVknsU4yr6Dh1cUvbZCsjwr)
 <br>
 
 ***
