@@ -59,7 +59,7 @@ _**Quad-Pack** Quad Pack is a app that allows you to orgainize your things when 
 ### Client (Front End)
 
 #### Wireframes
-![alt text](![alt text](https://res.cloudinary.com/otisg/image/upload/v1629490830/maddenwireframe2_wlm7lq.png)   )   
+![alt text](![alt text](https://res.cloudinary.com/otisg/image/upload/v1633397462/QuadPack_pvn7xu.png)   )   
 
 
 - Desktop Landing
