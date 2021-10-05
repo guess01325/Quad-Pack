@@ -153,7 +153,7 @@ client
 
 #### ERD Model
 
-![alt text](https://res.cloudinary.com/otisg/image/upload/v1633401994/ERD-Final_zfndzn.png)   
+![alt text](https://res.cloudinary.com/otisg/image/upload/v1633447440/erd-2_dpctxh.png)   
 
 <br>
 
