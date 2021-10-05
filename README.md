@@ -68,9 +68,10 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between your components. In other words, show which components are rendering the other components. Include a link to your component tree
+![alt text](https://res.cloudinary.com/otisg/image/upload/v1633403079/p4-architecture_ems05z.png)    
 
-(https://whimsical.com/quad-component-tree-FrnJiifivvnLR2E9CExEWc)
+
+
 
 #### Component Architecture
 
