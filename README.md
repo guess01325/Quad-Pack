@@ -76,10 +76,54 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 #### Component Architecture
 
 > Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-(https://whimsical.com/component-architecture-SSi6DfJqGf1oqCiTSb8VZM)
+
 ``` structure
 
-
+client
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── assets
+        ├── component-tree.png
+        ├── erd.png
+        ├── homepro-wireframe.png
+    ├── screens
+        ├── Home.jsx
+        ├── Home.css
+        ├── SignUp.jsx
+        ├── SingUP.css
+        ├── SignIn.jsx
+        ├── SignIN.css
+        ├── Events.jsx
+        ├── Events.css
+        ├── EditEvent.jsx
+        ├── EditEvent.css
+        ├── EventLugage.jsx
+        ├── EventLuggage.css
+    ├── services
+        ├── auth.js
+        ├── config.js
+        ├── projects.js
+        ├── rooms.js
+    ├── components
+        ├── Layout.jsx
+        ├── Layout.css
+        ├── NavBar.jsx
+        ├── NavBar.css
+        ├── Footer.jsx
+        ├── Footer.css
+    ├── App.jsx
+    ├── App.css
+    ├── index.js
+    ├── index.css
+    ├── MainContainer.jsx
+    ├── MainContainer.css
 
 ```
 
@@ -89,11 +133,21 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Readme & wireframe Setup   |    H     |     5hrs      |     TBD     |    TBD    |
+| Build Server & Endpoints |    H     |     4hrs      |     TBD     |     TBD     |
+| Build Tables & Associations | H     |     4hrs      |     TBD     |     TBD     |
+| Implement Authorization     | H     |     5 hrs     |     TBD     |     TBD     |
+| Create Back End CRUD     |    H      |    5 hrs     |     TBD     |     TBD     |
+| Create React App & Data Structure Setup | 1 hrs     |     TBD     |     TBD     |
+| Define React State & Props Efficiently  | 3 hrs     |     TBD     |     TBD     |
+| Use Data from Ruby & Render To Components | 5 hrs   |     TBD     |     TBD     |
+| Create Front End CRUD Actions            |  5 hrs    |     TBD     |     TBD     |
+| Style with MUI                           |  5 hrs    |     TBD     |     TBD     |
+| Style with CSS                           | 3 hrs     |     TBD     |     TBD     |
+| Debug & Code Cleanup                     | 3 hrs     |     TBD     |     TBD     |
+| Deploy Front & Back Ends                 | 2 hrs     |     TBD     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| TOTAL               |          |     50 hrs      |     TBD     |     TBD     |
 
 <br>
 
@@ -109,8 +163,10 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 ***
 
 ## Post-MVP
+-set Reminders for date coming up and special items you want to bring.
+-Send text messages to user about important items to bring on certain events
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+
 
 ***
 
