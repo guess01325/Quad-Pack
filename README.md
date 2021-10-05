@@ -84,10 +84,8 @@ client
 ├── node_modules
 ├── package.json
 ├── .gitignore
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
+├── public   
+│   └── index.html
 └── src
     ├── assets
         ├── component-tree.png
@@ -100,17 +98,17 @@ client
         ├── SingUP.css
         ├── SignIn.jsx
         ├── SignIN.css
-        ├── Events.jsx
-        ├── Events.css
+        ├── EventsDetails.jsx
+        ├── EventsDetails.css
         ├── EditEvent.jsx
         ├── EditEvent.css
         ├── EventLugage.jsx
         ├── EventLuggage.css
     ├── services
-        ├── auth.js
-        ├── config.js
-        ├── projects.js
-        ├── rooms.js
+        ├── auth.jsx
+        ├── config.jsx
+        ├──Events.jsx
+        ├──Luggage.jsx
     ├── components
         ├── Layout.jsx
         ├── Layout.css
@@ -137,17 +135,16 @@ client
 | Build Server & Endpoints |    H     |     4hrs      |     TBD     |     TBD     |
 | Build Tables & Associations | H     |     4hrs      |     TBD     |     TBD     |
 | Implement Authorization     | H     |     5 hrs     |     TBD     |     TBD     |
-| Create Back End CRUD     |    H      |    5 hrs     |     TBD     |     TBD     |
-| Create React App & Data Structure Setup | 1 hrs     |     TBD     |     TBD     |
-| Define React State & Props Efficiently  | 3 hrs     |     TBD     |     TBD     |
+| Create Back End full CRUD     |    H      |    5 hrs     |     TBD     |     TBD     |
+| Create React App & Data Setup | 1 hrs     |     TBD     |     TBD     |
+| Define React State & Props  | 3 hrs     |     TBD     |     TBD     |
 | Use Data from Ruby & Render To Components | 5 hrs   |     TBD     |     TBD     |
 | Create Front End CRUD Actions            |  5 hrs    |     TBD     |     TBD     |
-| Style with MUI                           |  5 hrs    |     TBD     |     TBD     |
 | Style with CSS                           | 3 hrs     |     TBD     |     TBD     |
 | Debug & Code Cleanup                     | 3 hrs     |     TBD     |     TBD     |
 | Deploy Front & Back Ends                 | 2 hrs     |     TBD     |     TBD     |
 
-| TOTAL               |          |     50 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |     45 hrs      |     TBD     |     TBD     |
 
 <br>
 
