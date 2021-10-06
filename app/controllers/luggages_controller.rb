@@ -1,0 +1,2 @@
+class LuggagesController < ApplicationController
+end
