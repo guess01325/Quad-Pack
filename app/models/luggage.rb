@@ -1,4 +1,4 @@
 class Luggage < ApplicationRecord
   belongs_to :user
-  belongs_to :venue
+  belongs_to :event
 end
