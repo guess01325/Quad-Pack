@@ -1,11 +1,11 @@
 class LuggagesController < ApplicationController
     before_action :set_luggage, only: [:show, :update, :destroy]
-    before_action :authorize_request, except: [:index, :show]
+    before_action :authorize_request, except: [ :show]
     before_action :set_event, only: [:index, :create]
 
-   # GET /events
+   # GET /events/eventID/luggages
     def index
-      @luggage = Luggage.where(event:@event)
+      @luggage = Luggage.where(event:@event).where(user:@current_user)
       render json: @luggage
     end
   
@@ -18,6 +18,7 @@ class LuggagesController < ApplicationController
     def create
       @luggage = Luggage.new(luggage_params)
       @luggage.user = @current_user
+      # check this out:  @luggage.event = Event.find(params[:event_id])
       @luggage.event = @event
       if @luggage.save 
         render json: @luggage, status: :created

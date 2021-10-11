@@ -10,15 +10,15 @@ Event.destroy_all
 User.destroy_all
 
 
-@otis = User.create!(username: "guess01325", firstname: "otis", lastname: "guess", email: "guess01@gmail.com", organization: "greenbay", password: "gue134859")
+@otis = User.create!(username: "guess01325", firstname: "Otis", lastname: "Guess", email: "guess01@gmail.com", organization: "Greenbay", password: "gue134859")
 
-@event1 = Event.create!(date: "dec 12", venue: "gilletts", city: "foxboro", user: @otis )
-@event2 = Event.create!(date: "dec 5", venue: "texas stadium", city: "irving texas", user: @otis )
-@event3 = Event.create!(date: "dec 25", venue: "lambeau", city: "green bay", user: @otis )
-@event4 = Event.create!(date: "jan 05", venue: "soldier field", city: "chicago", user: @otis )
+@event1 = Event.create!(date: "Dec 12", venue: "Gilletts", city: "Foxboro", user: @otis )
+@event2 = Event.create!(date: "Dec 5", venue: "Texas stadium", city: "Irving", user: @otis )
+@event3 = Event.create!(date: "Dec 25", venue: "Lambeau", city: "Green bay", user: @otis )
+@event4 = Event.create!(date: "Jan 05", venue: "Soldier field", city: "Chicago", user: @otis )
 
-@luggages1 = Luggage.create(name: "apple sauce", amount: 15, user: @otis, event: @event1)
-@luggages2 = Luggage.create(name: "energy drink", amount: 20, user: @otis, event: @event1)
+@luggages1 = Luggage.create(name: "Apple sauce", amount: 15, user: @otis, event: @event1)
+@luggages2 = Luggage.create(name: "Energy drink", amount: 20, user: @otis, event: @event1)
 
 puts "#{User.count} users created!"
 puts "#{Event.count} events created!"

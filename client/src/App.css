@@ -1,4 +1,16 @@
 .App {
   text-align: center;
+  
+  background-image: url("https://res.cloudinary.com/otisg/image/upload/v1633903423/aj-moving_mmx6mj.jpg");
+  background-size: 2000px;
+  image-rendering: auto;
+ width: 1865px;
+ height: 2000px;
+  
+}
+
+
+:root{
+  width: 1865px;
 }
 
