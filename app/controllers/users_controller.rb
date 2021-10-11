@@ -7,14 +7,14 @@ class UsersController < ApplicationController
       render json: {
         user: @user.attributes.except('password_digest'),
         token: @token
-        }, status: :created
+      }, status: :created
     else
       render json: @user.errors, status: :unprocessable_entity
     end
   end
-  
-  private 
-  
+
+  private
+
   def user_params
     params.require(:user).permit(:firstname, :lastname, :email, :password, :organization, :username)
   end

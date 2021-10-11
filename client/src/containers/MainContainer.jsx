@@ -1,10 +1,10 @@
 import { useHistory, Switch, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { getAllEvents, postEvent, putEvent  } from "../services/events";
-import Events from "../screens/Events"
-import EventDetails from "../screens/EventDetails"
+import { getAllEvents, postEvent, putEvent } from "../services/events";
+import Events from "../screens/Events";
+import EventDetails from "../screens/EventDetails";
 import LuggageContainer from "./LuggageContainer";
-import './MainContainer.css'
+import "./MainContainer.css";
 
 export default function MainContainer(props) {
   const [events, setEvents] = useState([]);
@@ -22,31 +22,19 @@ export default function MainContainer(props) {
     fetchEvents();
   }, []);
 
- 
-
-  return ( 
+  return (
     <div className="main-container">
-
       <h1>The Quad Pack</h1>
 
       <Switch>
-        
         <Route path="/events/:id">
-         <LuggageContainer events={events} />
+          <LuggageContainer events={events} />
         </Route>
 
-        
         <Route path="/events">
-         <Events events={events}/>
+          <Events events={events} />
         </Route>
-
-       
-       </Switch>
-        
-
+      </Switch>
     </div>
- 
-  )
+  );
 }
-
-

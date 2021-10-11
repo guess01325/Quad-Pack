@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./SignUP.css"
+import "./SignUP.css";
 // import {Link} from 'react-router-dom';
 
 export default function SignUp(props) {
@@ -10,7 +10,7 @@ export default function SignUp(props) {
     username: "",
     email: "",
     password: "",
-    organization: ""
+    organization: "",
   });
   // const {username, password} = formData
   const handleChange = (e) => {
@@ -22,8 +22,9 @@ export default function SignUp(props) {
   };
 
   return (
-    <form className="sign-up-form"
-      onSubmit={(e)=> {
+    <form
+      className="sign-up-form"
+      onSubmit={(e) => {
         e.preventDefault();
         props.handleRegister(formData);
       }}
@@ -31,7 +32,9 @@ export default function SignUp(props) {
       <h3 className="sign-up-title">Sign Up</h3>
       <label>
         Firstname:
-        <input className="sign-up-inputs" id="first-name"
+        <input
+          className="sign-up-inputs"
+          id="first-name"
           type="text"
           name="firstname"
           value={formData.firstname}
@@ -39,10 +42,12 @@ export default function SignUp(props) {
           onChange={handleChange}
         />
       </label>
-      
+
       <label>
         Lastname:
-        <input className="sign-up-inputs" id="last-name"
+        <input
+          className="sign-up-inputs"
+          id="last-name"
           type="text"
           name="lastname"
           value={formData.lastname}
@@ -50,10 +55,12 @@ export default function SignUp(props) {
           onChange={handleChange}
         />
       </label>
-      
+
       <label>
         Username:
-        <input className="sign-up-inputs" id="username"
+        <input
+          className="sign-up-inputs"
+          id="username"
           type="text"
           name="username"
           value={formData.username}
@@ -61,10 +68,12 @@ export default function SignUp(props) {
           onChange={handleChange}
         />
       </label>
-     
+
       <label>
         Email:
-        <input className="sign-up-inputs" id="email"
+        <input
+          className="sign-up-inputs"
+          id="email"
           type="text"
           name="email"
           value={formData.email}
@@ -72,10 +81,12 @@ export default function SignUp(props) {
           onChange={handleChange}
         />
       </label>
-    
+
       <label>
         Password:
-        <input className="sign-up-inputs" id="password"
+        <input
+          className="sign-up-inputs"
+          id="password"
           type="password"
           name="password"
           value={formData.password}
@@ -83,11 +94,12 @@ export default function SignUp(props) {
           onChange={handleChange}
         />
       </label>
-      
-      
+
       <label>
         Organization:
-        <input className="sign-up-inputs" id="organization"
+        <input
+          className="sign-up-inputs"
+          id="organization"
           type="text"
           name="organization"
           value={formData.organization}
@@ -96,8 +108,7 @@ export default function SignUp(props) {
         />
       </label>
       <div className="sign-up-div">
-      <button className="sign-up-button">Sign Up</button>
-
+        <button className="sign-up-button">Sign Up</button>
       </div>
     </form>
   );

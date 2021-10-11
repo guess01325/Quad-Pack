@@ -1,26 +1,55 @@
-h1{
-    font-size: 50px;
+h1 {
+  font-size: 50px;
 }
 
-.header-links{
-    font-size: 30px;
+.header-links {
+  font-size: 30px;
 }
-
 
 @media only screen and (max-width: 1024px) {
-    .header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        right: 50px;
-    }
-  .header-links{
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 50px;
+  }
+  .header-links {
     font-size: 15px;
     width: auto;
+    margin: 20px;
   }
   h1 {
-      font-size: 40px;
-      width: auto;
+    font-size: 40px;
+    width: auto;
   }
+}
+
+.nav-buttons{
+display: flex;
+display: row;
+justify-content: center;
+
+}
+
+.nav-buttons a{
+    margin: 20px;
+    color: white;
+   
+    
+}
+
+.nav-buttons a:hover {
+    color: blue;
   }
+
+
+.home-link a{
+    color: #8b0000;
+}
+
+
+.home-link a:hover{
+    color: blue;
+}
+  

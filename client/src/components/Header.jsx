@@ -3,32 +3,34 @@ import "./Header.css";
 
 function Header(props) {
   const { currentUser, handleLogout } = props;
-  console.log(currentUser)
+  console.log(currentUser);
   return (
     <div className="header">
-     <header>
-       <Link to="/">
-          <h1>Quad Pack</h1>
-       </Link>
-                <nav>
-                {
-                    currentUser ? (
-                        <div>
-                            <p>{props.currentUser.username}</p>
-                            <Link to='/events'>Events</Link>
-                            <button onClick={handleLogout}>Logout</button>
-                        </div>
-                    ) : (
-                        <div>
-                    <Link className="header-links" to='/sign-up'>Sign Up</Link>
-                    <Link className="header-links" to='/sign-in'>Sign In</Link>
-                    
-                    </div>
-                    )}
-               
-
-                </nav>
-                </header>
+      <header>
+        <div className="home-link">
+          <Link to="/">
+            <h1>Quad Home</h1>
+          </Link>
+        </div>
+        <nav>
+          {currentUser ? (
+            <div>
+              <p>{props.currentUser.username}</p>
+              <Link to="/events">Events</Link>
+              <button onClick={handleLogout}>Logout</button>
+            </div>
+          ) : (
+            <div className="nav-buttons">
+              <Link className="header-links" to="/sign-up">
+                Sign Up
+              </Link>
+              <Link className="header-links" to="/sign-in">
+                Sign In
+              </Link>
+            </div>
+          )}
+        </nav>
+      </header>
     </div>
   );
 }
