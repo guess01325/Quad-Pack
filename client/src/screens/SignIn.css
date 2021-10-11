@@ -6,7 +6,7 @@
 
 
 .login-form{
- height: 100vh;
+ height: 700px;
  width: 1865px;
 display: flex;
 flex-direction: column;
@@ -58,4 +58,18 @@ align-content: center;
 #password{
     position: relative;
     right:30px;
+}
+
+
+
+
+@media only screen and (max-width: 1370px) {
+  /* .login-title{
+      position: relative;
+      right: px;
+  } */
+  .login-form{
+      position: relative;
+      right: 450px;
+  }
 }

@@ -60,3 +60,11 @@
     right:45px;
     
 }
+
+
+@media only screen and (max-width: 1370px) {
+   .sign-up-form{
+       position: relative;
+       right: 450px;
+   }
+  }

@@ -4,7 +4,7 @@ import { getAllEvents, postEvent, putEvent  } from "../services/events";
 import Events from "../screens/Events"
 import EventDetails from "../screens/EventDetails"
 import LuggageContainer from "./LuggageContainer";
-
+import './MainContainer.css'
 
 export default function MainContainer(props) {
   const [events, setEvents] = useState([]);
@@ -25,7 +25,7 @@ export default function MainContainer(props) {
  
 
   return ( 
-    <div>
+    <div className="main-container">
 
       <h1>The Quad Pack</h1>
 

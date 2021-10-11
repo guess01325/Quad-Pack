@@ -5,7 +5,7 @@ function Header(props) {
   const { currentUser, handleLogout } = props;
   console.log(currentUser)
   return (
-    <div>
+    <div className="header">
      <header>
        <Link to="/">
           <h1>Quad Pack</h1>

@@ -33,7 +33,7 @@ export default function SignUp(props) {
         Firstname:
         <input className="sign-up-inputs" id="first-name"
           type="text"
-          name=""
+          name="firstname"
           value={formData.firstname}
           placeholder="Enter First Name"
           onChange={handleChange}
@@ -44,7 +44,7 @@ export default function SignUp(props) {
         Lastname:
         <input className="sign-up-inputs" id="last-name"
           type="text"
-          name=""
+          name="lastname"
           value={formData.lastname}
           placeholder="Enter Last Name"
           onChange={handleChange}
@@ -55,7 +55,7 @@ export default function SignUp(props) {
         Username:
         <input className="sign-up-inputs" id="username"
           type="text"
-          name=""
+          name="username"
           value={formData.username}
           placeholder="Enter Username"
           onChange={handleChange}
@@ -65,7 +65,7 @@ export default function SignUp(props) {
       <label>
         Email:
         <input className="sign-up-inputs" id="email"
-          type=""
+          type="text"
           name="email"
           value={formData.email}
           placeholder="Enter Email"
@@ -76,7 +76,7 @@ export default function SignUp(props) {
       <label>
         Password:
         <input className="sign-up-inputs" id="password"
-          type=""
+          type="password"
           name="password"
           value={formData.password}
           placeholder="Enter Password"
@@ -84,11 +84,12 @@ export default function SignUp(props) {
         />
       </label>
       
+      
       <label>
         Organization:
         <input className="sign-up-inputs" id="organization"
           type="text"
-          name=""
+          name="organization"
           value={formData.organization}
           placeholder="organization"
           onChange={handleChange}

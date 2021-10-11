@@ -10,7 +10,7 @@ Event.destroy_all
 User.destroy_all
 
 
-@otis = User.create!(username: "guess01325", firstname: "Otis", lastname: "Guess", email: "guess01@gmail.com", organization: "Greenbay", password: "gue134859")
+@otis = User.create!(username: "guess01325", firstname: "Otis", lastname: "Guess", email: "guess01@gmail.com", organization: "Greenbay", password: "123456")
 
 @event1 = Event.create!(date: "Dec 12", venue: "Gilletts", city: "Foxboro", user: @otis )
 @event2 = Event.create!(date: "Dec 5", venue: "Texas stadium", city: "Irving", user: @otis )
