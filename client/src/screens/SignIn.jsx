@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./SignIn.css";
 
 export default function SignIn(props) {
@@ -8,7 +7,7 @@ export default function SignIn(props) {
     username: "",
     password: "",
   });
-  // const {username, password} = formData
+ console.log(formData)
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -16,6 +15,7 @@ export default function SignIn(props) {
       [name]: value,
     }));
   };
+ 
 
   return (
     <form
@@ -37,6 +37,7 @@ export default function SignIn(props) {
             value={formData.username}
             placeholder="Enter username"
             onChange={handleChange}
+            
           />
         </label>
 

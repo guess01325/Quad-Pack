@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./SignUP.css";
-// import {Link} from 'react-router-dom';
+
 
 export default function SignUp(props) {
   const [formData, setFormData] = useState({
@@ -12,6 +12,7 @@ export default function SignUp(props) {
     password: "",
     organization: "",
   });
+  console.log(formData)
   // const {username, password} = formData
   const handleChange = (e) => {
     const { name, value } = e.target;

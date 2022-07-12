@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import EventDetails from "./EventDetails";
+// import EventDetails from "./EventDetails";
 import "./Events.css";
 
 export default function Events(props) {
@@ -11,7 +11,7 @@ export default function Events(props) {
             <p> {event.date}</p>
             <p>{event.city}</p>
             <p>{event.venue}</p>
-            <Link to={`/events/${event.id}/luggages`}>Luggage</Link>
+            <Link to ={`/events/${event.id}/luggages`}>Luggage</Link>
           </div>
         ))}
       </div>

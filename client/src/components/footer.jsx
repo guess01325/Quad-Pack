@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer>
-      <Link>About Me</Link>
+      {/* <Link to>About Me</Link> */}
     </footer>
   );
 }

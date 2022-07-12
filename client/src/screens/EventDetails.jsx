@@ -32,7 +32,7 @@ export default function EventDetail(props) {
           </div>
         ))}
       </div>
-      <Link to={`/events/${eventId}/luggage/create`}>
+      <Link to ={`/events/${eventId}/luggage/create`}>
         <button>Add to Luggage</button>
       </Link>
     </div>

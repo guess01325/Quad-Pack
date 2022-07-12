@@ -3,7 +3,7 @@ import "./Header.css";
 
 function Header(props) {
   const { currentUser, handleLogout } = props;
-  console.log(currentUser);
+                        
   return (
     <div className="header">
       <header>
