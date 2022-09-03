@@ -67,7 +67,7 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633441851/aj-figma-2_s3t7ug.png)      
 - Mobile Resource Index
 <br>
-#### Component Tree
+### Component Tree
 
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633403079/p4-architecture_ems05z.png)    
 
