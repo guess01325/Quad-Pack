@@ -154,6 +154,7 @@ client
 ### Server (Back End)
 
 <br>
+
 ### ERD Model
 
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633447440/erd-2_dpctxh.png)   
@@ -162,6 +163,7 @@ client
 
 ***
 <br>
+
 ## Post-MVP
 -set Reminders for date coming up and special items you want to bring.
 -Send text messages to user about important items to bring on certain events
