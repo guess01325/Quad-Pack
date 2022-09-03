@@ -22,7 +22,7 @@ GA Final Project
 
 <br>
 
-### Overview
+## Overview
 
 **Quad-Pack** 
 Quad Pack is a app that allows you to orgainize your things when you are a professional Athlete on the road, customizing to your likings depending on location and trip. 
