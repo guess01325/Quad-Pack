@@ -64,7 +64,7 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 - Desktop Landing
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633397462/QuadPack_pvn7xu.png)   
  
-- Mobile Resource Index
+- Mobile Resource Index 
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633441851/aj-figma-2_s3t7ug.png)      
 
 <br>
