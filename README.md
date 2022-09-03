@@ -55,6 +55,7 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 |     Ruby on Rails      | A open source framework for Web development in Ruby, and object-oriented programming language similar to python  |
 |  JWT  | for token base authentication_ |
 | bcrypt           | used for Password encryption.|
+
 <br>
 
 ### Client (Front End)
@@ -65,7 +66,7 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633441851/aj-figma-2_s3t7ug.png)      
 - Mobile Resource Index
-
+<br>
 #### Component Tree
 
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633403079/p4-architecture_ems05z.png)    
@@ -124,6 +125,7 @@ client
     ├── MainContainer.css
 
 ```
+<br>
 
 #### Time Estimates
 
@@ -150,15 +152,15 @@ client
 
 ### Server (Back End)
 
-
+<br>
 #### ERD Model
 
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633447440/erd-2_dpctxh.png)   
 
-<br>
+
 
 ***
-
+<br>
 ## Post-MVP
 -set Reminders for date coming up and special items you want to bring.
 -Send text messages to user about important items to bring on certain events
@@ -166,11 +168,11 @@ client
 
 
 ***
-
+<br>
 ## Code Showcase
 
 > Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
+<br>
 ## Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution
