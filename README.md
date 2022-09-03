@@ -73,14 +73,14 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 
 <br>
 
-### Component Tree
+## Component Tree
 
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633403079/p4-architecture_ems05z.png)    
 
 <br>
 
 
-### Component Architecture
+## Component Architecture
 
 > Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
@@ -133,7 +133,7 @@ client
 ```
 <br>
 
-### Time Estimates
+## Time Estimates
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
 
@@ -156,11 +156,11 @@ client
 
 <br>
 
-### Server (Back End)
+## Server (Back End)
 
 <br>
 
-### ERD Model
+## ERD Model
 
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633447440/erd-2_dpctxh.png)   
 
