@@ -28,20 +28,3 @@
   border: solid 10px #67b7d1;
   border-radius: 5px;
 }
-
-@media only screen and (max-width: 1024px) {
-  .event-details-container {
-    position: relative;
-    right: 65px;
-  }
-  .luggage {
-    font-size: 30px;
-    border: blue solid;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .luggage {
-    border: crimson solid;
-  }
-}

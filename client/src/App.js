@@ -49,6 +49,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="title">The Quad Pack</h1>
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
           <Route path="/sign-in">

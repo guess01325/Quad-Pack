@@ -1,32 +1,32 @@
 import { Link } from "react-router-dom";
-import "./Header.css";
+import "../assets/Header.css";
 
 function Header(props) {
   const { currentUser, handleLogout } = props;
-                        
+
   return (
     <div className="header">
       <header>
-        <div className="home-link">
-          <Link to="/">
-            <h1>Quad Home</h1>
-          </Link>
-        </div>
+        <div className="home-link"></div>
         <nav>
           {currentUser ? (
             <div>
               <p>{props.currentUser.username}</p>
-              <Link to="/events">Events</Link>
+              <Link to="/">
+                <h1 className="home-link">Home</h1>
+              </Link>
+              <Link to="/events">
+                Events
+                </Link>
               <button onClick={handleLogout}>Logout</button>
             </div>
           ) : (
-            <div className="nav-buttons">
-              <Link className="header-links" to="/sign-up">
-                Sign Up
+            <div id="nav-buttons">
+               <Link to="/">
+                <h1 className="home-link">Home</h1>
               </Link>
-              <Link className="header-links" to="/sign-in">
-                Sign In
-              </Link>
+              <Link to="/sign-up">Sign Up</Link>
+              <Link to="/sign-in">Sign In</Link>
             </div>
           )}
         </nav>

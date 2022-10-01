@@ -1,0 +1,45 @@
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.home-link{
+  color:white
+}
+
+/* 
+.header-links {
+  font-size: 30px;
+} */
+
+
+/* #nav-buttons{
+  display: flex;
+  display: row;
+  justify-content: center;
+  
+} */
+
+#nav-buttons a{
+  /* text-align: center; */
+    margin: 20px;
+    color: white;
+   
+    
+}
+
+.nav-buttons a:hover {
+  color: blue;
+}
+
+
+.home-link a{
+  color: white;
+}
+
+
+.home-link a:hover{
+  color: blue;
+}
+

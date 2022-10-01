@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
-  # post '/users', to: 'users#create'
+
   resources :users, only: :create
   resources :events do
     resources :luggages, shallow: true

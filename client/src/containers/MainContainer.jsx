@@ -2,9 +2,9 @@ import { useHistory, Switch, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getAllEvents, postEvent, putEvent } from "../services/events";
 import Events from "../screens/Events";
-import EventDetails from "../screens/EventDetails";
+import EventLuggage from "../screens/EventLuggage";
 import LuggageContainer from "./LuggageContainer";
-import "./MainContainer.css";
+import "../assets/MainContainer.css";
 
 export default function MainContainer(props) {
   const [events, setEvents] = useState([]);
@@ -23,9 +23,14 @@ export default function MainContainer(props) {
   }, []);
 
   return (
+    <>
+    
     <div className="main-container">
-      <h1>The Quad Pack</h1>
+      
+    </div>
 
+
+    <div className="loggged-in-content">
       <Switch>
         <Route path="/events/:id">
           <LuggageContainer events={events} />
@@ -36,5 +41,6 @@ export default function MainContainer(props) {
         </Route>
       </Switch>
     </div>
+    </>
   );
 }

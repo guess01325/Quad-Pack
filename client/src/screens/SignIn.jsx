@@ -1,13 +1,13 @@
 import React from "react";
 import { useState } from "react";
-import "./SignIn.css";
+import "../assets/SignIn.css";
 
 export default function SignIn(props) {
   const [formData, setFormData] = useState({
     username: "",
     password: "",
   });
- console.log(formData)
+ 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -27,8 +27,8 @@ export default function SignIn(props) {
     >
       <h3 className="login-title">Login</h3>
       <div className="labels">
-        <label>
           Username:
+        <label>
           <input
             className="sign-in-inputs"
             id="username"
@@ -41,8 +41,8 @@ export default function SignIn(props) {
           />
         </label>
 
-        <label>
           Password:
+        <label>
           <input
             className="sign-in-inputs"
             id="password"

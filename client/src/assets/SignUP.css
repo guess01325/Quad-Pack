@@ -1,0 +1,38 @@
+ .sign-up-form{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+
+  
+}
+
+.sign-up-title {
+  font-size: 25px;
+}
+
+.sign-up-inputs {
+  /* font-size: 35px; */
+  margin: 2px;
+ 
+  
+}
+
+/* .sign-in-div {
+  display: flex;
+  align-content: center;
+ justify-content: center;
+ 
+ 
+}  */
+
+ .sign-up-button{
+  
+  margin: 20px;
+  font-size: 20px;
+}
+
+
+
+

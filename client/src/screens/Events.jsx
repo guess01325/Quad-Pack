@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 // import EventDetails from "./EventDetails";
-import "./Events.css";
+import "../assets/Events.css";
 
 export default function Events(props) {
   return (
     <div className="events-container">
-      <div className="event-border">
+      <div className="event-border"ds>
         {props.events.map((event) => (
           <div className="events" key={event.id}>
             <p> {event.date}</p>

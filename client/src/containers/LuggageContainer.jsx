@@ -9,7 +9,7 @@ import {
 } from "../services/luggages";
 import LuggageEdit from "../screens/LuggageEdit";
 import LuggageCreate from "../screens/LuggageCreate";
-import EventDetails from "../screens/EventDetails";
+import EventLuggage from "../screens/EventLuggage";
 
 export default function LuggageContainer(props) {
   const [luggage, setLuggage] = useState([]);
@@ -71,7 +71,7 @@ export default function LuggageContainer(props) {
           />
         </Route>
         <Route path="/events/:eventId/luggages">
-          <EventDetails
+          <EventLuggage
             event={event}
             luggage={luggage}
             getAllLuggageItems={getAllLuggageItems}

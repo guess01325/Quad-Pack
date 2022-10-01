@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useHistory, useParams } from "react-router";
 import { Link } from "react-router-dom";
-import "./EventDetails.css";
+import "../assets/EventLuggage.css";
 
 export default function EventDetail(props) {
   const [luggage, setLuggage] = useState([]);

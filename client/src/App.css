@@ -1,18 +1,21 @@
-.App {
-  text-align: center;
-  
+body {
+ text-align: center;
+  background-color:#F50E12 ;
   background-image: url("https://res.cloudinary.com/otisg/image/upload/v1633903423/aj-moving_mmx6mj.jpg");
-  background-size: 2000px;
-  image-rendering: auto;
- width: 1865px;
- height: 2000px;
+  background-size: contain;
+  height: 100vh;
   
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  
+ 
+}
+.title{
+  color: red;
 }
 
 
-:root{
-  width: 1865px;
-}
 
 
 
@@ -21,17 +24,4 @@ a:hover {
   color: #00F
 }
 
-@media only screen and (max-width: 1024px) {
-  .App{
-    background-size: 1100px;
-    width: 1100px;
-    height: 2000px;
-    image-rendering: auto;
-    position: relative;
-    
-  }
-  :root{
-    width: 1100px;
-  }
-}
 
