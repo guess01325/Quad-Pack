@@ -15,7 +15,7 @@ export default function LuggageContainer(props) {
   const [luggage, setLuggage] = useState([]);
   const [eventLuggage, setEventLuggage] = useState([]);
   const [event, setEvent] = useState(null);
-  const history = useHistory();
+    const history = useHistory();
   const params = useParams();
   const { id } = params;
 

@@ -8,7 +8,7 @@ import "../assets/MainContainer.css";
 
 export default function MainContainer(props) {
   const [events, setEvents] = useState([]);
-  const [luggage, setLuggage] = useState([]);
+  
 
   const history = useHistory();
 

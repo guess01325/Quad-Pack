@@ -19,7 +19,7 @@ export const postLuggage = async (eventId, luggageData) => {
 
 export const putLuggage = async (id, luggageData) => {
   const resp = await api.put(`/luggages/${id}`, { luggage: luggageData });
-  return resp.data;
+  return resp.data; 
 };
 
 //make into try catch?

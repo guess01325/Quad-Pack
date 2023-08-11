@@ -12,9 +12,10 @@ export default function SignIn(props) {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
-      [name]: value,
+      [name]: value
     }));
   };
+
  
 
   return (

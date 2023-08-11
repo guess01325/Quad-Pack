@@ -44,7 +44,7 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 
 <br>
 
-### Libraries and Dependencies
+## Libraries and Dependencies
 
 
 
@@ -55,25 +55,32 @@ Quad Pack is a app that allows you to orgainize your things when you are a profe
 |     Ruby on Rails      | A open source framework for Web development in Ruby, and object-oriented programming language similar to python  |
 |  JWT  | for token base authentication_ |
 | bcrypt           | used for Password encryption.|
+
 <br>
 
-### Client (Front End)
+## Client (Front End)
 
-#### Wireframes
-![alt text](https://res.cloudinary.com/otisg/image/upload/v1633397462/QuadPack_pvn7xu.png)   
+### Wireframes
 - Desktop Landing
 
-![alt text](https://res.cloudinary.com/otisg/image/upload/v1633441851/aj-figma-2_s3t7ug.png)      
-- Mobile Resource Index
+![alt text](https://res.cloudinary.com/otisg/image/upload/v1633397462/QuadPack_pvn7xu.png)   
 
-#### Component Tree
+ <br>
+ 
+- Mobile Resource Index 
+
+![alt text](https://res.cloudinary.com/otisg/image/upload/v1633441851/aj-figma-2_s3t7ug.png)      
+
+<br>
+
+## Component Tree
 
 ![alt text](https://res.cloudinary.com/otisg/image/upload/v1633403079/p4-architecture_ems05z.png)    
 
+<br>
 
 
-
-#### Component Architecture
+## Component Architecture
 
 > Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
@@ -124,8 +131,9 @@ client
     ├── MainContainer.css
 
 ```
+<br>
 
-#### Time Estimates
+## Time Estimates
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
 
@@ -148,16 +156,18 @@ client
 
 <br>
 
-### Server (Back End)
-
-
-#### ERD Model
-
-![alt text](https://res.cloudinary.com/otisg/image/upload/v1633447440/erd-2_dpctxh.png)   
+## Server (Back End)
 
 <br>
 
+## ERD Model
+
+![alt text](https://res.cloudinary.com/otisg/image/upload/v1633447440/erd-2_dpctxh.png)   
+
+
+
 ***
+<br>
 
 ## Post-MVP
 -set Reminders for date coming up and special items you want to bring.
@@ -166,11 +176,11 @@ client
 
 
 ***
-
+<br>
 ## Code Showcase
 
 > Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
+<br>
 ## Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution

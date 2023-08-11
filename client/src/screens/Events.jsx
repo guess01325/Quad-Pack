@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom"
 // import EventDetails from "./EventDetails";
 import "../assets/Events.css";
 
 export default function Events(props) {
+  console.log(props.events)
   return (
     <div className="events-container">
       <div className="event-border"ds>
