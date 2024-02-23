@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { useHistory, useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { Link } from "react-router-dom";
 import "../assets/EventLuggage.css";
 
 export default function EventDetail(props) {
   const [luggage, setLuggage] = useState([]);
 
-  const history = useHistory();
+  const history = useNavigate();
   const { eventId } = useParams();
 
   useEffect(() => {

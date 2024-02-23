@@ -21,9 +21,9 @@ function Header(props) {
               <button onClick={handleLogout}>Logout</button>
             </div>
           ) : (
-            <div id="nav-buttons">
+            <div className="nav-buttons">
                <Link to="/">
-                <h1 className="home-link">Home</h1>
+                Home
               </Link>
               <Link to="/sign-up">Sign Up</Link>
               <Link to="/sign-in">Sign In</Link>

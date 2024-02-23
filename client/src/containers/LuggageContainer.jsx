@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Switch, useHistory, useParams, Route } from "react-router";
+import { Routes, useNavigate, useParams, Route } from "react-router";
 import {
   getAllLuggageItems,
   postLuggage,
@@ -15,14 +15,14 @@ export default function LuggageContainer(props) {
   const [luggage, setLuggage] = useState([]);
   const [eventLuggage, setEventLuggage] = useState([]);
   const [event, setEvent] = useState(null);
-    const history = useHistory();
+  const history = useNavigate();
   const params = useParams();
-  const { id } = params;
+  const { eventId } = params;
 
   useEffect(() => {
-    const event = props.events.find((eventItem) => eventItem.id === Number(id));
+    const event = props.events.find((eventItem) => eventItem.id === Number(eventId));
     setEvent(event);
-  }, [props.events, id]);
+  }, [props.events, eventId]);
 
   useEffect(() => {
     const fetchLuggage = async () => {
@@ -57,29 +57,40 @@ export default function LuggageContainer(props) {
 
   return (
     <div>
-      <Switch>
-        <Route path="/events/:eventId/luggage/create">
-          <LuggageCreate
-            luggage={luggage}
-            handleCreateLuggage={handleCreateLuggage}
-          />
-        </Route>
-        <Route path="/events/:eventId/luggage/:id/edit">
-          <LuggageEdit
-            luggage={luggage}
-            handleUpdateLuggage={handleUpdateLuggage}
-          />
-        </Route>
-        <Route path="/events/:eventId/luggages">
-          <EventLuggage
-            event={event}
-            luggage={luggage}
-            getAllLuggageItems={getAllLuggageItems}
-            handleDeleteLuggage={handleDeleteLuggage}
-            getOneLuggage={getOneLuggage}
-          />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route
+          path="/events/:eventId/luggage/create"
+          element={
+            <LuggageCreate
+              luggage={luggage}
+              handleCreateLuggage={handleCreateLuggage}
+            />
+          }
+        />
+
+        <Route
+          path="/events/:eventID/luggage/:id/edit"
+          element={
+            <LuggageEdit
+              luggage={luggage}
+              handleUpdateLuggage={handleUpdateLuggage}
+            />
+          }
+        />
+
+        <Route
+          path="/events/:eventId/luggages"
+          element={
+            <EventLuggage
+              event={event}
+              luggage={luggage}
+              getAllLuggageItems={getAllLuggageItems}
+              handleDeleteLuggage={handleDeleteLuggage}
+              getOneLuggage={getOneLuggage}
+            />
+          }
+        />
+      </Routes>
     </div>
   );
 }
