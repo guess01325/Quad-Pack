@@ -7,7 +7,7 @@ function Header(props) {
   return (
     <div className="header">
       <header>
-        <div className="home-link"></div>
+        <div className="nav-buttons"></div>
         <nav>
           {currentUser ? (
             <div>
