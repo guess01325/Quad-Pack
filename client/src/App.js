@@ -6,6 +6,11 @@ import Layout from "./components/Layout";
 import SignIn from "./screens/SignIn";
 import SignUp from "./screens/SignUp";
 import MainContainer from "./containers/MainContainer";
+import LuggageEdit from "./screens/LuggageEdit";
+import LuggageCreate from "./screens/LuggageCreate";
+import Events from "./screens/Events";
+import EventLuggage from "./screens/EventLuggage";
+import LuggageContainer from "./containers/LuggageContainer";
 
 import {
   loginUser,
@@ -50,17 +55,54 @@ function App() {
       <h1 className="title">The Quad Pack</h1>
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Routes>
-          <Route
-            path="/sign-in"
-            element={<SignIn handleLogin={handleLogin} />}
-          />
+          <Route path="/" element={<MainContainer />}>
+            <Route path="/" element={<MainContainer />} />
 
-          <Route
-            path="/sign-up"
-            element={<SignUp handleRegister={handleRegister} />}
-          />
+            <Route path="/events/" element={<Events events={events} />}>
+              
+                      <Route
+                        path=":eventId/luggages"
+                        element={
+                          <EventLuggage
+                  
+                          />
+                        }
+                      />
+              <Route
+                path=":eventId"
+                element={<LuggageContainer/>}
+              />
+              <Route
+                path=":eventID/luggage/:id/edit"
+                element={
+                  <LuggageEdit
+                    luggage={luggage}
+                    handleUpdateLuggage={handleUpdateLuggage}
+                  />
+                  
+                }
+              />
+              <Route
+                path=":eventId/luggage/create"
+                element={
+                  <LuggageCreate
+                    luggage={luggage}
+                    handleCreateLuggage={handleCreateLuggage}
+                  />
+                }
+              />
+            </Route>
 
-          <Route path="*" element={<MainContainer />} />
+            <Route
+              path="/sign-in"
+              element={<SignIn handleLogin={handleLogin} />}
+            />
+
+            <Route
+              path="/sign-up"
+              element={<SignUp handleRegister={handleRegister} />}
+            />
+          </Route>
         </Routes>
       </Layout>
     </div>

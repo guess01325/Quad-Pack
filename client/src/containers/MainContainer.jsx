@@ -1,11 +1,8 @@
-import { useNavigate, Routes, Route } from "react-router-dom";
+import { useNavigate, Routes, Route, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getAllEvents, postEvent, putEvent } from "../services/events";
-import Events from "../screens/Events";
-import EventLuggage from "../screens/EventLuggage";
-import LuggageContainer from "./LuggageContainer";
 import "../assets/MainContainer.css";
-import Layout from "../components/Layout";
+
 
 export default function MainContainer(props) {
   const [events, setEvents] = useState([]);
@@ -23,25 +20,20 @@ export default function MainContainer(props) {
   }, []);
 
   return (
-    <>
   
-      <div className="main-container"></div>
+  
+      <div className="main-container">
+
 
       <div className="loggged-in-content">
-        <Routes>
-          <Route
-            path="/events/:eventId/*"
-            element={<LuggageContainer events={events} />}
-          />
-
-          <Route
-            path="/events/"
-            element={<Events events={events}/>}
-          
-          
-          ></Route>
-        </Routes>
+        <Outlet
+        context={[
+          events
+        ]}
+        />
+     
       </div>
-    </>
+        </div>
+  
   );
 }

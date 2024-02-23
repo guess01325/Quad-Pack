@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Routes, useNavigate, useParams, Route } from "react-router";
+import { Routes, useNavigate, useParams, Route, Outlet } from "react-router";
 import {
   getAllLuggageItems,
   postLuggage,
@@ -7,9 +7,7 @@ import {
   deleteLuggage,
   getOneLuggage,
 } from "../services/luggages";
-import LuggageEdit from "../screens/LuggageEdit";
-import LuggageCreate from "../screens/LuggageCreate";
-import EventLuggage from "../screens/EventLuggage";
+
 
 export default function LuggageContainer(props) {
   const [luggage, setLuggage] = useState([]);
@@ -57,40 +55,26 @@ export default function LuggageContainer(props) {
 
   return (
     <div>
-      <Routes>
-        <Route
-          path="/events/:eventId/luggage/create"
-          element={
-            <LuggageCreate
-              luggage={luggage}
-              handleCreateLuggage={handleCreateLuggage}
-            />
-          }
+    
+     
+    <div className="loggged-in-content">
+        <Outlet
+        context={[
+          event,
+          luggage,
+          getAllLuggageItems,
+          handleDeleteLuggage,
+          getOneLuggage,
+          handleUpdateLuggage,
+          handleCreateLuggage,
+          
+        ]}
         />
+     
+      </div>
 
-        <Route
-          path="/events/:eventID/luggage/:id/edit"
-          element={
-            <LuggageEdit
-              luggage={luggage}
-              handleUpdateLuggage={handleUpdateLuggage}
-            />
-          }
-        />
+   
 
-        <Route
-          path="/events/:eventId/luggages"
-          element={
-            <EventLuggage
-              event={event}
-              luggage={luggage}
-              getAllLuggageItems={getAllLuggageItems}
-              handleDeleteLuggage={handleDeleteLuggage}
-              getOneLuggage={getOneLuggage}
-            />
-          }
-        />
-      </Routes>
     </div>
   );
 }
