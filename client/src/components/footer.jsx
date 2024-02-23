@@ -1,10 +1,10 @@
 
 import "../assets/Footer.css";
 
-function Footer() {
+function Footer(props) {
   return (
     <footer>
-      {/* <Link to>About Me</Link> */}
+      Otis
     </footer>
   );
 }
