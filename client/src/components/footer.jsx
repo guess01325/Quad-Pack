@@ -1,7 +1,7 @@
 
 import "../assets/Footer.css";
 
-function Footer(props) {
+export default function Footer (props) {  
   return (
     <footer>
       Otis
@@ -9,4 +9,4 @@ function Footer(props) {
   );
 }
 
-export default Footer;
+
