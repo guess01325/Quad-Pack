@@ -34,20 +34,20 @@ function App() {
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData);
     setCurrentUser(userData);
-    navigate("/events");
+    // navigate("/events");
   };
 
   const handleRegister = async (registerData) => {
     const userData = await registerUser(registerData);
     setCurrentUser(userData);
-    navigate("/events");
+    // navigate("/events");
   };
 
   const handleLogout = () => {
     setCurrentUser(null);
     localStorage.removeItem("authToken");
     removeToken();
-    navigate("/sign-in");
+    // navigate("/sign-in");
   };
 
   return (
@@ -56,42 +56,23 @@ function App() {
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Routes>
           <Route path="/" element={<MainContainer />}>
-            <Route path="/" element={<MainContainer />} />
 
-            <Route path="/events/" element={<Events events={events} />}>
-              
-                      <Route
-                        path=":eventId/luggages"
-                        element={
-                          <EventLuggage
-                  
-                          />
-                        }
-                      />
+            <Route path="/events/" element={<Events />}>
+              </Route>
+
+              <Route path="events/:eventId/luggages" element={<LuggageContainer />} >
+
+              <Route path="all" element={<EventLuggage />} />
               <Route
-                path=":eventId"
-                element={<LuggageContainer/>}
+                path="create"
+                element={<LuggageCreate />}
               />
               <Route
-                path=":eventID/luggage/:id/edit"
-                element={
-                  <LuggageEdit
-                    luggage={luggage}
-                    handleUpdateLuggage={handleUpdateLuggage}
-                  />
-                  
-                }
+                path=":id/edit"
+                element={<LuggageEdit />}
               />
-              <Route
-                path=":eventId/luggage/create"
-                element={
-                  <LuggageCreate
-                    luggage={luggage}
-                    handleCreateLuggage={handleCreateLuggage}
-                  />
-                }
-              />
-            </Route>
+              </Route>
+
 
             <Route
               path="/sign-in"
