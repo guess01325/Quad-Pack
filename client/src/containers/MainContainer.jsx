@@ -6,8 +6,9 @@ import "../assets/MainContainer.css";
 
 export default function MainContainer(props) {
   const [events, setEvents] = useState([]);
+  
 
-  const history = useNavigate();
+  const history = useHistory();
 
   const { currentUser } = props;
 
@@ -25,15 +26,17 @@ export default function MainContainer(props) {
       <div className="main-container">
 
 
-      <div className="loggged-in-content">
-        <Outlet
-        context={[
-          events
-        ]}
-        />
-     
-      </div>
-        </div>
-  
+    <div className="loggged-in-content">
+      <Switch>
+        <Route path="/events/:id">
+          <LuggageContainer events={events} />
+        </Route>
+
+        <Route path="/events">
+          <Events events={events} />
+        </Route>
+      </Switch>
+    </div>
+    </div>
   );
 }

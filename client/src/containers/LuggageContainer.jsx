@@ -13,7 +13,7 @@ export default function LuggageContainer(props) {
   const [luggage, setLuggage] = useState([]);
   const [eventLuggage, setEventLuggage] = useState([]);
   const [event, setEvent] = useState(null);
-  const navigate = useNavigate();
+    const history = useHistory();
   const params = useParams();
   const { eventId } = params;
 
@@ -55,26 +55,29 @@ export default function LuggageContainer(props) {
 
   return (
     <div>
-    
-     
-    <div className="loggged-in-content">
-        <Outlet
-        context={[
-          event,
-          luggage,
-          getAllLuggageItems,
-          handleDeleteLuggage,
-          getOneLuggage,
-          handleUpdateLuggage,
-          handleCreateLuggage,
-          
-        ]}
-        />
-     
-      </div>
-
-   
-
+      <Switch>
+        <Route path="/events/:eventId/luggage/create">
+          <LuggageCreate
+            luggage={luggage}
+            handleCreateLuggage={handleCreateLuggage}
+          />
+        </Route>
+        <Route path="/events/:eventId/luggage/:id/edit">
+          <LuggageEdit
+            luggage={luggage}
+            handleUpdateLuggage={handleUpdateLuggage}
+          />
+        </Route>
+        <Route path="/events/:eventId/luggages">
+          <EventLuggage
+            event={event}
+            luggage={luggage}
+            getAllLuggageItems={getAllLuggageItems}
+            handleDeleteLuggage={handleDeleteLuggage}
+            getOneLuggage={getOneLuggage}
+          />
+        </Route>
+      </Switch>
     </div>
   );
 }

@@ -1,16 +1,15 @@
+
 import { useState, useEffect } from "react";
 import "./App.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
-import Layout from "./components/Layout";
+import Layout from "./layouts/Layout";
 import SignIn from "./screens/SignIn";
 import SignUp from "./screens/SignUp";
 import MainContainer from "./containers/MainContainer";
-import LuggageEdit from "./screens/LuggageEdit";
-import LuggageCreate from "./screens/LuggageCreate";
 import Events from "./screens/Events";
-import EventLuggage from "./screens/EventLuggage";
 import LuggageContainer from "./containers/LuggageContainer";
+import EventLugage from "./screens/EventLuggage"
 
 import {
   loginUser,
@@ -22,6 +21,7 @@ import {
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const navigate = useNavigate();
+  console.log(currentUser);
 
   useEffect(() => {
     const handleVerify = async () => {
@@ -56,22 +56,14 @@ function App() {
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Routes>
           <Route path="/" element={<MainContainer />}>
+            </Route>
+        <Route path="/events/" element={<Events/>}/>
 
-            <Route path="/events/" element={<Events />}>
-              </Route>
-
-              <Route path="events/:eventId/luggages" element={<LuggageContainer />} >
-
-              <Route path="all" element={<EventLuggage />} />
-              <Route
-                path="create"
-                element={<LuggageCreate />}
-              />
-              <Route
-                path=":id/edit"
-                element={<LuggageEdit />}
-              />
-              </Route>
+      <Route path="/luggage" element={<LuggageContainer/>}>
+        
+      <Route path=":eventId/luggages" element={<EventLugage/>}/>
+        
+        </Route> 
 
 
             <Route
@@ -79,11 +71,8 @@ function App() {
               element={<SignIn handleLogin={handleLogin} />}
             />
 
-            <Route
-              path="/sign-up"
-              element={<SignUp handleRegister={handleRegister} />}
-            />
-          </Route>
+            <Route path="/sign-up" element={<SignUp handleRegister={handleRegister}/>}>
+            </Route>
         </Routes>
       </Layout>
     </div>
