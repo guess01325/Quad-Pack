@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Switch, useHistory, useParams, Route } from "react-router";
+import { Routes, useNavigate, useParams, Route } from "react-router";
 import {
   getAllLuggageItems,
   postLuggage,
@@ -15,7 +15,7 @@ export default function LuggageContainer(props) {
   const [luggage, setLuggage] = useState([]);
   const [eventLuggage, setEventLuggage] = useState([]);
   const [event, setEvent] = useState(null);
-    const history = useHistory();
+    const navigate = useNavigate();
   const params = useParams();
   const { id } = params;
 
@@ -37,7 +37,7 @@ export default function LuggageContainer(props) {
   const handleCreateLuggage = async (formData) => {
     const luggageItem = await postLuggage(event.id, formData);
     setLuggage((prevState) => [...prevState, luggageItem]);
-    history.push(`/events/${event.id}/luggages`);
+    // navigate(`/events/${event.id}/luggages`);
   };
 
   const handleUpdateLuggage = async (id, formData) => {
@@ -47,7 +47,7 @@ export default function LuggageContainer(props) {
         return luggage.id === Number(id) ? luggageItem : luggage;
       })
     );
-    history.push(`/events/${event.id}/luggages`);
+    // navigate(`/events/${event.id}/luggages`);
   };
 
   const handleDeleteLuggage = async (id) => {
@@ -57,7 +57,7 @@ export default function LuggageContainer(props) {
 
   return (
     <div>
-      <Switch>
+      <Routes>
         <Route path="/events/:eventId/luggage/create">
           <LuggageCreate
             luggage={luggage}
@@ -79,7 +79,7 @@ export default function LuggageContainer(props) {
             getOneLuggage={getOneLuggage}
           />
         </Route>
-      </Switch>
+      </Routes>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useHistory, Switch, Route } from "react-router-dom";
+import { useNavigate, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getAllEvents, postEvent, putEvent } from "../services/events";
 import Events from "../screens/Events";
@@ -10,7 +10,7 @@ export default function MainContainer(props) {
   const [events, setEvents] = useState([]);
   
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const { currentUser } = props;
 
@@ -31,15 +31,7 @@ export default function MainContainer(props) {
 
 
     <div className="loggged-in-content">
-      <Switch>
-        <Route path="/events/:id">
-          <LuggageContainer events={events} />
-        </Route>
-
-        <Route path="/events">
-          <Events events={events} />
-        </Route>
-      </Switch>
+    
     </div>
     </>
   );
