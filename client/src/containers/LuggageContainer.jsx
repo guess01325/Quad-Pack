@@ -33,7 +33,7 @@ export default function LuggageContainer(props) {
     if (event) {
       fetchLuggage();
     }
-  }, [event]);
+  }, [event, eventId]);
 
   const handleCreateLuggage = async (formData) => {
     const luggageItem = await postLuggage(eventId, formData);
