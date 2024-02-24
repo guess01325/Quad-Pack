@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Routes, useNavigate, useParams, Route, Outlet } from "react-router";
+import {  useNavigate, useParams, Outlet, useOutletContext } from "react-router-dom";
 import {
   getAllLuggageItems,
   postLuggage,
@@ -11,20 +11,23 @@ import {
 
 export default function LuggageContainer(props) {
   const [luggage, setLuggage] = useState([]);
-  const [eventLuggage, setEventLuggage] = useState([]);
+  // const [eventLuggage, setEventLuggage] = useState([]);
   const [event, setEvent] = useState(null);
-  const history = useNavigate();
+  const navigate = useNavigate();
   const params = useParams();
   const { eventId } = params;
+  const [ events] = useOutletContext();
+
+  console.log(events)
 
   useEffect(() => {
-    const event = props.events.find((eventItem) => eventItem.id === Number(eventId));
+    const event = events.find((eventItem) => eventItem.id === Number(eventId));
     setEvent(event);
-  }, [props.events, eventId]);
+  }, [events, eventId]);
 
   useEffect(() => {
     const fetchLuggage = async () => {
-      const luggage = await getAllLuggageItems(event.id);
+      const luggage = await getAllLuggageItems(eventId);
       setLuggage(luggage);
     };
     if (event) {
@@ -33,9 +36,9 @@ export default function LuggageContainer(props) {
   }, [event]);
 
   const handleCreateLuggage = async (formData) => {
-    const luggageItem = await postLuggage(event.id, formData);
+    const luggageItem = await postLuggage(eventId, formData);
     setLuggage((prevState) => [...prevState, luggageItem]);
-    history.push(`/events/${event.id}/luggages`);
+    navigate(`/events/${event.id}/luggages`);
   };
 
   const handleUpdateLuggage = async (id, formData) => {
@@ -45,14 +48,14 @@ export default function LuggageContainer(props) {
         return luggage.id === Number(id) ? luggageItem : luggage;
       })
     );
-    history.push(`/events/${event.id}/luggages`);
+    navigate(`/events/${event.id}/luggages`);
   };
 
   const handleDeleteLuggage = async (id) => {
     await deleteLuggage(id);
     setLuggage((prevState) => prevState.filter((luggage) => luggage.id !== id));
   };
-
+console.log(luggage)
   return (
     <div>
     

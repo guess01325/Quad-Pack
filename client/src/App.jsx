@@ -56,53 +56,27 @@ function App() {
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Routes>
           <Route path="/" element={<MainContainer />}>
-            <Route path="/" element={<MainContainer />} />
-
-            <Route path="/events/" element={<Events events={events} />}>
-              
-                      <Route
-                        path=":eventId/luggages"
-                        element={
-                          <EventLuggage
-                  
-                          />
-                        }
-                      />
-              <Route
-                path=":eventId"
-                element={<LuggageContainer/>}
-              />
-              <Route
-                path=":eventID/luggage/:id/edit"
-                element={
-                  <LuggageEdit
-                    luggage={luggage}
-                    handleUpdateLuggage={handleUpdateLuggage}
-                  />
-                  
-                }
-              />
-              <Route
-                path=":eventId/luggage/create"
-                element={
-                  <LuggageCreate
-                    luggage={luggage}
-                    handleCreateLuggage={handleCreateLuggage}
-                  />
-                }
-              />
-            </Route>
 
             <Route
-              path="/sign-in"
-              element={<SignIn handleLogin={handleLogin} />}
+              path="events:eventId/luggages"
+              element={<LuggageContainer />}
             />
+            <Route path="events" element={<Events />}></Route>
 
-            <Route
-              path="/sign-up"
-              element={<SignUp handleRegister={handleRegister} />}
-            />
+            <Route path=":eventId/luggage/create" element={<LuggageCreate />} />
+            <Route path=":eventid/luggage/:id/edit" element={<LuggageEdit />} />
+            <Route path="events/:eventId/luggages/all" element={<EventLuggage />} />
           </Route>
+
+          <Route
+            path="/sign-in"
+            element={<SignIn handleLogin={handleLogin} />}
+          />
+
+          <Route
+            path="/sign-up"
+            element={<SignUp handleRegister={handleRegister} />}
+          />
         </Routes>
       </Layout>
     </div>

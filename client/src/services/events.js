@@ -22,4 +22,5 @@ export const putEvent = async (id, eventData) => {
 
 export const getUserEvent = async () => {
   const resp = await api.get("/users/events");
+  return resp.data
 };
