@@ -56,27 +56,36 @@ function App() {
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Routes>
           <Route path="/" element={<MainContainer />}>
+            <Route path="events/" element={<Events />}/>
 
             <Route
-              path="events:eventId/luggages"
+              path="/events/:eventId/luggages"
               element={<LuggageContainer />}
+            >
+              <Route
+                path="all"
+                element={<EventLuggage />}
+              />
+
+              <Route
+                path="create"
+                element={<LuggageCreate />}
+              />
+              <Route
+                path=":id/edit"
+                element={<LuggageEdit />}
+              />
+            </Route>
+            <Route
+              path="/sign-in"
+              element={<SignIn handleLogin={handleLogin} />}
             />
-            <Route path="events" element={<Events />}></Route>
 
-            <Route path=":eventId/luggage/create" element={<LuggageCreate />} />
-            <Route path=":eventid/luggage/:id/edit" element={<LuggageEdit />} />
-            <Route path="events/:eventId/luggages/all" element={<EventLuggage />} />
+            <Route
+              path="/sign-up"
+              element={<SignUp handleRegister={handleRegister} />}
+            />
           </Route>
-
-          <Route
-            path="/sign-in"
-            element={<SignIn handleLogin={handleLogin} />}
-          />
-
-          <Route
-            path="/sign-up"
-            element={<SignUp handleRegister={handleRegister} />}
-          />
         </Routes>
       </Layout>
     </div>

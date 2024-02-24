@@ -1,6 +1,15 @@
 import { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 
 export default function LuggageCreate(props) {
+  const [   event,
+    luggage,
+    getAllLuggageItems,
+    handleDeleteLuggage,
+    getOneLuggage,
+    handleUpdateLuggage,
+    handleCreateLuggage,] = useOutletContext()
+    
   const [formData, setFormData] = useState({
     name: "",
     amount: 0,
@@ -14,7 +23,7 @@ export default function LuggageCreate(props) {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.handleCreateLuggage(formData);
+    handleCreateLuggage(formData);
   };
 
   return (

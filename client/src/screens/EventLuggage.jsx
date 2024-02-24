@@ -14,11 +14,7 @@ export default function EventDetail(props) {
     handleCreateLuggage,] = useOutletContext();
 
   const { eventId } = useParams();
-  // useEffect(() => {
-  //   if (luggage) {
-  //     setLuggages(luggage);
-  //   }
-  // }, [luggage]);
+
 
   return (
     <div className="event-details-container">
@@ -31,13 +27,13 @@ export default function EventDetail(props) {
               Delete
             </button>
 
-            <Link to={`/events/${eventLuggage.id}/luggage/${eventLuggage.id}/edit`}>
+            <Link to={`/events/${eventLuggage.id}/luggages/${eventLuggage.id}/edit`}>
               <button>Edit</button>
             </Link>
           </div>
         ))}
       </div>
-      <Link to ={`/events/${eventId}/luggage/create`}>
+      <Link to ={`/events/${eventId}/luggages/create`}>
         <button>Add to Luggage</button>
       </Link>
     </div>

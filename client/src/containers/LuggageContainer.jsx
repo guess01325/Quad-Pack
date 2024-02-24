@@ -18,7 +18,7 @@ export default function LuggageContainer(props) {
   const { eventId } = params;
   const [ events] = useOutletContext();
 
-  console.log(events)
+  console.log(luggage)
 
   useEffect(() => {
     const event = events.find((eventItem) => eventItem.id === Number(eventId));
@@ -38,7 +38,7 @@ export default function LuggageContainer(props) {
   const handleCreateLuggage = async (formData) => {
     const luggageItem = await postLuggage(eventId, formData);
     setLuggage((prevState) => [...prevState, luggageItem]);
-    navigate(`/events/${event.id}/luggages`);
+    // navigate(`/events/${event.id}/luggages`);
   };
 
   const handleUpdateLuggage = async (id, formData) => {
@@ -48,7 +48,7 @@ export default function LuggageContainer(props) {
         return luggage.id === Number(id) ? luggageItem : luggage;
       })
     );
-    navigate(`/events/${event.id}/luggages`);
+    // navigate(`/events/${event.id}/luggages`);
   };
 
   const handleDeleteLuggage = async (id) => {

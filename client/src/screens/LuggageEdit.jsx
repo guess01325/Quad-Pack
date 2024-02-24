@@ -1,7 +1,14 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router";
+import { useParams, useOutletContext } from "react-router-dom";
 
 export default function LuggageEdit(props) {
+  const [   event,
+    luggage,
+    getAllLuggageItems,
+    handleDeleteLuggage,
+    getOneLuggage,
+    handleUpdateLuggage,
+    handleCreateLuggage,] = useOutletContext();
   const [formData, setFormData] = useState({
     name: "",
     amount: 0,
@@ -12,16 +19,16 @@ export default function LuggageEdit(props) {
 
   useEffect(() => {
     const preFillFormData = () => {
-      const luggage = props.luggage.find(
+      const luggages = luggage.find(
         (luggageItem) => luggageItem.id === Number(id)
       );
-      setFormData(luggage);
+      setFormData(luggages);
     };
 
-    if (props.luggage.length) {
+    if (luggage.length) {
       preFillFormData();
     }
-  }, [props.luggage, id]);
+  }, [luggage, id]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,7 +39,7 @@ export default function LuggageEdit(props) {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.handleUpdateLuggage(id, formData);
+    handleUpdateLuggage(id, formData);
   };
 
   return (
