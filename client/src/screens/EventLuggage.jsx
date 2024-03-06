@@ -17,7 +17,7 @@ export default function EventDetail(props) {
 
 
   return (
-    <div className="event-details-container">
+    <div>
       <div className="event-detail-border">
         {luggage.map((eventLuggage) => (
           <div className="luggage" key={eventLuggage.id}>

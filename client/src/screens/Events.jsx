@@ -8,7 +8,7 @@ export default function Events(props) {
   const [ events] = useOutletContext();
  
   return (
-    <div className="events-container">
+    <div>
       <div className="event-border">
         {events.map((event) => (
           <div className="events" key={event.id}>

@@ -12,7 +12,6 @@ export default function SignUp(props) {
     password: "",
     organization: "",
   });
-  console.log(formData)
   // const {username, password} = formData
   const handleChange = (e) => {
     const { name, value } = e.target;
