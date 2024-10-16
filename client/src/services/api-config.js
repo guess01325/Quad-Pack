@@ -4,7 +4,7 @@ const baseUrl =
   process.env.NODE_ENV === 
   "production"
     ? 
-    "https://https://quad-pack.onrender.com/"
+    "https://quad-pack.onrender.com"
     :
     "http://localhost:3000";
 
