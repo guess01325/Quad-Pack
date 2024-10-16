@@ -21,6 +21,14 @@ gem 'puma', '~> 6.0'
  gem 'rake', '~> 13.0'
 
 
+
+gem 'sass-rails' # for SCSS/Sass support
+gem 'uglifier'   # for JavaScript minification
+gem 'coffee-rails' # for CoffeeScript support
+gem 'turbo-rails' # optional, if using Turbo (Rails 7 and above)
+
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
