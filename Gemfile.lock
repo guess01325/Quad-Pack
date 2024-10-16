@@ -224,6 +224,7 @@ DEPENDENCIES
   puma (~> 6.0)
   rack-cors
   rails (~> 7.1.3, >= 7.1.3)
+  rake (~> 13.0)
   spring
   tzinfo-data
 

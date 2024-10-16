@@ -18,6 +18,9 @@ gem 'puma', '~> 6.0'
  # Use Json Web Token (JWT) for token based authentication
  gem 'jwt'
 
+ gem 'rake', '~> 13.0'
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
